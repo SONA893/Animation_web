@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Animated One-Page Website</title>
+  <link rel="stylesheet" href="web.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <div class="logo">A</div>
+        <div>
+          <div style="font-weight:800">Aurora</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px">Creative studio</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="blob one"></div>
+  <div class="blob two"></div>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <div class="eyebrow reveal">New — interactive demo</div>
+        <h1 class="reveal">We build beautiful interfaces that <span id="typed" class="typing"></span><span class="cursor" aria-hidden></span></h1>
+        <p class="lead reveal">Pixel-perfect UI, micro-interactions, and performant front-end engineering — designed to delight and built to scale.</p>
+        <div class="cta-row reveal">
+          <a class="btn" href="#contact">Get a quote</a>
+          <a style="background:transparent;border:1px solid rgba(255,255,255,0.04);padding:8px 12px;border-radius:10px;color:var(--muted);text-decoration:none">See case studies</a>
+        </div>
+        <div class="features reveal" style="margin-top:24px">
+          <div class="feature">Fast load</div>
+          <div class="feature">Accessible</div>
+          <div class="feature">Responsive</div>
+        </div>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="card">
+          <div class="mini-bars" style="margin-bottom:12px">
+            <div style="width:10px;height:10px;border-radius:99px;background:#ff7b7b"></div>
+            <div style="width:10px;height:10px;border-radius:99px;background:#facc15"></div>
+            <div style="width:10px;height:10px;border-radius:99px;background:#34d399"></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:center">
+            <div style="width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#052;">UI</div>
+            <div>
+              <div style="font-weight:800">Aurora Interface</div>
+              <div style="color:var(--muted);font-size:13px;margin-top:6px">Design system, components, tokens</div>
+            </div>
+          </div>
+          <div style="margin-top:12px;border-radius:10px;padding:10px;background:linear-gradient(180deg,rgba(2,6,23,0.3),rgba(2,6,23,0.2));">
+            <div style="display:flex;gap:10px;align-items:center;justify-content:space-between">
+              <div style="font-weight:700">Performance</div>
+              <div style="font-weight:800;color:var(--accent)">92%</div>
+            </div>
+            <div style="height:8px;background:rgba(255,255,255,0.03);border-radius:8px;margin-top:10px;overflow:hidden"><div style="width:92%;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-2))"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="reveal">
+      <h2 style="margin:0 0 18px">Services</h2>
+      <div class="grid services">
+        <div class="card-service reveal">
+          <div style="display:flex;gap:12px;align-items:center">
+            <div class="service-ic">UX</div>
+            <div>
+              <div style="font-weight:800">UX & Research</div>
+              <div style="color:var(--muted);font-size:13px;margin-top:6px">User-centred flows and testing</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-service reveal">
+          <div style="display:flex;gap:12px;align-items:center">
+            <div class="service-ic">FE</div>
+            <div>
+              <div style="font-weight:800">Frontend Development</div>
+              <div style="color:var(--muted);font-size:13px;margin-top:6px">React, performance, animations</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-service reveal">
+          <div style="display:flex;gap:12px;align-items:center">
+            <div class="service-ic">Design</div>
+            <div>
+              <div style="font-weight:800">Product Design</div>
+              <div style="color:var(--muted);font-size:13px;margin-top:6px">Design systems & visual language</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="reveal">
+      <h2 style="margin:0 0 18px">Portfolio</h2>
+      <div class="portfolio">
+        <div class="thumb reveal"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80&auto=format&fit=crop&ixlib=rb-4.0.3&s=000000" alt="portfolio"><div class="overlay">E-commerce UI</div></div>
+        <div class="thumb reveal"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&q=80&auto=format&fit=crop&ixlib=rb-4.0.3&s=000000" alt="portfolio"><div class="overlay">Analytics dashboard</div></div>
+        <div class="thumb reveal"><img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80&auto=format&fit=crop&ixlib=rb-4.0.3&s=000000" alt="portfolio"><div class="overlay">Mobile app</div></div>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2 style="margin:0 0 18px">Contact</h2>
+      <div style="display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start">
+        <form id="contactForm" class="contact-form" onsubmit="return handleSubmit(event)">
+          <input type="text" id="name" placeholder="Your name" required>
+          <input type="email" id="email" placeholder="Your email" required>
+          <input type="text" id="subject" placeholder="Subject" style="grid-column:1/3" required>
+          <textarea id="message" rows="5" placeholder="Message" style="grid-column:1/3" required></textarea>
+          <button class="btn" style="grid-column:1/3" type="submit">Send message</button>
+        </form>
+        <div style="padding:18px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)">
+          <div style="font-weight:800">Let's collaborate</div>
+          <div style="color:var(--muted);margin-top:10px">Email: hello@aurora.design<br>Location: Remote</div>
+          <div style="margin-top:16px">
+            <div style="font-weight:700;margin-bottom:8px">Skills</div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <div style="background:var(--glass);padding:8px;border-radius:8px">HTML</div>
+              <div style="background:var(--glass);padding:8px;border-radius:8px">CSS</div>
+              <div style="background:var(--glass);padding:8px;border-radius:8px">JS</div>
+              <div style="background:var(--glass);padding:8px;border-radius:8px">React</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="max-width:1100px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center">
+        <div>&copy; <span id="year"></span> Aurora — built with ❤️</div>
+        <div style="color:var(--muted)">Made with animations</div>
+      </div>
+    </footer>
+  </main>
+
+</body>
+<script src="script.js"></script>
+</html>
